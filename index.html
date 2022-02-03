@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/adaptive.css" />
+    <title>Регистрация пользователя</title>
+  </head>
+  <body>
+    <header>
+      <div class="header_row">
+        <div class="logo">
+          <img src="./images/logo.png" alt="" />
+        </div>
+        <h1>Форма регистрации пользователя</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="container col">
+        <h2>Укажите личные данные</h2>
+        <form class="col" id="registration" onsubmit="return false">
+          <div class="row surname">
+            <label for="surname">Фамилия:</label>
+            <input
+              type="text"
+              name=""
+              id="surname"
+              placeholder="Фамилия"
+              required
+              autocomplete="off"
+            />
+          </div>
+          <div class="row name">
+            <label for="name">Имя:</label>
+            <input type="text" name="" id="name" placeholder="Имя" required autocomplete="off" />
+          </div>
+          <div class="row patronymic">
+            <label for="patronymic">Отчество:</label>
+            <input
+              type="text"
+              name=""
+              id="patronymic"
+              placeholder="Отчество"
+              required
+              autocomplete="off"
+            />
+          </div>
+          <div class="row gender">
+            <label for="gender">Пол:</label>
+            <select name="" id="gender">
+              <option>Выберите пол</option>
+              <option>Женский</option>
+              <option>Мужской</option>
+            </select>
+          </div>
+          <div class="row birth">
+            <label for="birth">Дата рождения:</label>
+            <input
+              type="date"
+              name=""
+              id="birth"
+              min="1921-01-01"
+              max="2022-01-01"
+              onkeydown="return false"
+            />
+          </div>
+          <div class="row country">
+            <label for="select_country">Страна проживания:</label>
+            <select name="" id="select_country"></select>
+          </div>
+          <div class="row cities">
+            <label for="select_city">Город проживания:</label>
+            <select name="" id="select_city"></select>
+          </div>
+          <div class="row tel">
+            <label for="phone">Мобильный телефон:</label>
+            <div class="phone" id="fullphone">
+              <input type="tel" id="country_code" value="+" readonly />
+              <input name="phone" id="phone" readonly />
+            </div>
+          </div>
+          <div class="btns row">
+            <button type="submit">Зарегистрироваться</button>
+            <button type="reset" onclick="resetphone()">Стереть</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

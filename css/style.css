@@ -1,0 +1,146 @@
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+  color: #2d527c;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  background: #f7fbffbe;
+}
+
+input {
+  outline: none;
+}
+
+header {
+  padding: 20px;
+  background: linear-gradient(#f3f9ffbe, #a8c9f0be);
+  border-bottom: 3px solid #2d527c;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.header_row {
+  width: calc(100% - 130px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+}
+
+h2 {
+  margin: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 10px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  height: 100vh;
+  background: #f7fbffbe;
+}
+
+form {
+  width: 100%;
+  padding: 10px;
+}
+
+label {
+  font-size: 18px;
+}
+
+input,
+.choice_country {
+  padding: 5px;
+  width: 196px;
+  height: 26px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: all 0.5s ease-in-out;
+}
+
+select {
+  padding: 5px;
+  width: 210px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid black;
+  font-size: 18px;
+  outline: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.city {
+  display: none;
+}
+
+.phone {
+  display: flex;
+  flex-direction: row;
+  width: 205px;
+  margin: 0;
+  border-radius: 5px;
+  border: 2px solid black;
+  font-size: 18px;
+  transition: all 0.5s ease-in-out;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#country_code {
+  padding: 5px 0 5px 5px;
+  height: 26px;
+  width: 12px;
+  border: none;
+}
+
+#phone {
+  padding: 5px 0;
+  height: 26px;
+  width: 100%;
+  border: none;
+}
+
+.btns button {
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: #e4f1ff54;
+  border: 2px solid #2d527c;
+  font-size: 18px;
+  transition: 0.5s ease-in-out;
+}
+
+.btns button:hover {
+  background-color: #2d527c;
+  color: white;
+  transition: 0.5s ease-in-out;
+}

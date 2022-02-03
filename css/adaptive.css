@@ -1,0 +1,112 @@
+@media (min-width: 1990px) {
+  .container {
+    width: 1000px;
+  }
+  .row {
+    margin: 30px;
+  }
+
+  header {
+    padding: 30px;
+  }
+  header img {
+    width: 200px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 40px;
+    margin: 30px;
+  }
+
+  input {
+    width: 396px;
+    padding: 15px;
+    font-size: 26px;
+  }
+  select {
+    width: 430px;
+    padding: 15px;
+    height: 60px;
+    font-size: 26px;
+  }
+  select::after {
+    padding-right: 30px;
+  }
+  .phone {
+    width: 426px;
+  }
+  #country_code {
+    padding: 15px 0 15px 15px;
+    height: 30px;
+    width: 15px;
+  }
+  #phone {
+    padding: 15px 0;
+    height: 30px;
+  }
+  label {
+    font-size: 32px;
+  }
+  .btns button {
+    font-size: 22px;
+    margin: 20px 10px;
+    padding: 20px 60px;
+  }
+}
+
+@media (max-width: 1989px) and (min-width: 1440px) {
+  .container {
+    width: 600px;
+  }
+  .row {
+    margin: 20px;
+  }
+
+  input {
+    width: 296px;
+  }
+  select {
+    width: 310px;
+  }
+  .phone {
+    width: 306px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 30px;
+    margin: 25px;
+  }
+  label {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 400px;
+  }
+  .surname,
+  .name,
+  .patronymic,
+  .gender,
+  .birth,
+  .country,
+  .cities,
+  .tel {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  label {
+    margin-bottom: 10px;
+  }
+
+  .btns {
+    flex-direction: column-reverse;
+  }
+}
