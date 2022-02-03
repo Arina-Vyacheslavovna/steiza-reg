@@ -90,6 +90,12 @@
   .container {
     max-width: 400px;
   }
+  header {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 28px;
+  }
   .surname,
   .name,
   .patronymic,
@@ -108,5 +114,11 @@
 
   .btns {
     flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    width: 450px;
   }
 }
